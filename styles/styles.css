@@ -80,8 +80,7 @@ button {
 
 h2 {
     font-size: 1.3rem;
-    font-weight: bold;
-    ;
+    font-weight: bold;   ;
     text-align: center;
     margin: 2rem 0;
 }
@@ -111,6 +110,10 @@ h2 {
     /* display: none; */
     font-size: 0.8rem;
     margin-left: 3rem;
+}
+
+#services {
+    max-width: 100%;
 }
 
 @media only screen and (min-width: 600px) {
