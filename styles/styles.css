@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: poppins; 
+}
+header {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;    
+}
+nav {    
+    background: #f1f1f1;
+    width: 100%;
+}
+.logo {
+    width: 100%;
+    height: auto;
+}
+a:link, a:visited {
+    color: black;
+}
+.nav-links, .services-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-links li{
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.nav-links li:hover{
+   background-color: #FFDD4A;
+}
+.nav-links li a {
+    text-decoration: none;    
+}
+.illustration {
+    display: block;
+    width: 60%;
+    height: auto;
+    margin: 1.5rem auto;
+}
+h1 {
+    color: #A38D2F;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    display: block;   
+    width: 100%;
+    line-height: 1.4;
+    text-align: center;
+    font-weight: 350;
+}
+button {
+    padding: 0.5rem 2rem;
+    margin: 1.5rem auto;    
+    display: block;
+    background-color: #2B2EF0;
+    color: #fff;
+    border-radius: 0.2rem;
+}
+h2 {
+    font-size: 1.3rem;
+    font-weight: bold;;
+    text-align: center;
+    margin: 2rem 0;
+}
+.services-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(33rem, 1fr));
+    grid-gap: 4rem;
+    padding: 2rem;
+    justify-items: center;  
+    border: 1px solid red;
+}
+@media only screen and (min-width: 600px) {
+    header {        
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;  
+        position: relative;                 
+    }
+    .logo {
+        width: 15%;        
+        margin: 0;
+        padding:0;
+        position: relative;
+        float: left;
+    }
+    .nav-links{
+        display: flex;
+    }
+    nav {
+        position: relative;
+        left: 20%;
+        bottom: 5rem;
+        width: 50%;
+        background: unset;
+    }
+    
+}
+    
