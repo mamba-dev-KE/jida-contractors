@@ -89,13 +89,14 @@ h2 {
 .container-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
-    justify-items: center;    
+    /* justify-items: center;     */
+    justify-content: center;
 }
 
 .services img {
     width: 150px;
     height: auto;
-    padding: 3rem;    
+    padding: 2rem 3rem;    
 }
 
 .services {
@@ -107,7 +108,9 @@ h2 {
 }
 
 .services p {
-    display: none;
+    /* display: none; */
+    font-size: 0.8rem;
+    margin-left: 3rem;
 }
 
 @media only screen and (min-width: 600px) {
