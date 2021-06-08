@@ -8,6 +8,10 @@ body {
     font-family: poppins;
 }
 
+section {
+    padding: 1.5rem 0;    
+}
+
 header, main {
     min-width: 350px;
 }
@@ -25,9 +29,14 @@ nav {
     width: 80%;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .logo {
-    width: 80%;
-    height: auto;
+    width: 80%;    
 }
 
 a:link,
@@ -68,10 +77,12 @@ h1 {
     font-size: 2.5rem;
     display: block;
     width: 80%;
-    line-height: 1.4;
+    line-height: 1.5;
     text-align: center;
     font-weight: 350;
     margin: 0 auto;
+    border: 1px solid #FFDD4A;
+    padding: 0.5em 1em;
 }
 
 button {
@@ -88,7 +99,7 @@ h2 {
     font-size: 1.3rem;
     font-weight: bold;   ;
     text-align: center;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
 }
 
 .container-grid {
@@ -112,11 +123,65 @@ h2 {
     display: block;  
     margin: 2rem; 
 }
+#services {
+    width: 80%;
+    margin: 0 auto;
+}
 #projects {
     margin: 0 auto;
-    width: 100%;      
+    width: 80%;      
+}
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content:center;
+    background-color: #4849A3;
+    padding: 8em 0em;
+    width: 25rem;
+    margin-bottom: 12rem;
+    color: #fff;
+    text-align: center;
+}
+#contact-us {
+    margin: 0 auto;
 }
 
+#contact-us h2 {
+    margin-bottom: 4rem;
+}
+
+h3, .contact p {
+    padding: 1rem;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;   
+    letter-spacing: 0.5rem;
+}
+footer {
+    background-color: #2B2EF0;
+    color: #fff;
+    width: 100%;
+    padding: 6rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+}
+.copyright {
+    margin: 4rem 0;
+}
+.copyright img{    
+    width: 1rem;
+    position: relative; 
+    top: 0.9rem;
+    right: 1.5rem;
+}
+.developer-contact {
+    padding: 2rem 0;
+}
  @media only screen and (min-width: 600px) {
     header {
         display: flex;
@@ -144,6 +209,13 @@ h2 {
         width: 100%;
         background: unset;
         margin-top: 1.5rem;
+    }
+    footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .developer-contact {
+        padding: 1em 0;
     }
 
 } 
