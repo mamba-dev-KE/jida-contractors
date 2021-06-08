@@ -8,6 +8,10 @@ body {
     font-family: poppins;
 }
 
+header, main {
+    min-width: 350px;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -18,11 +22,11 @@ header {
 
 nav {
     background: #f1f1f1;
-    width: 100%;
+    width: 80%;
 }
 
 .logo {
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 
@@ -53,7 +57,7 @@ a:visited {
 
 .illustration {
     display: block;
-    width: 60%;
+    width: 50%;
     height: auto;
     margin: 1.5rem auto;
 }
@@ -88,8 +92,6 @@ h2 {
 .container-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
-    /* justify-items: center;     */
-    justify-content: center;
 }
 
 .services img {
@@ -97,35 +99,32 @@ h2 {
     height: auto;
     padding: 2rem 3rem;    
 }
-
-.services {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    padding-left: 1rem;
-}
-
-.services p {
-    /* display: none; */
+.services p, projects p {
     font-size: 0.8rem;
     margin-left: 3rem;
 }
-
-#services {
-    max-width: 100%;
+.square {
+    width:100px;
+    height: 100px;
+    background-color: #FFDD4A;
+    display: block;  
+    margin: 2rem; 
+}
+#projects {
+    margin: 0 auto;
+    width: 100%;      
 }
 
-@media only screen and (min-width: 600px) {
+ @media only screen and (min-width: 600px) {
     header {
         display: flex;
-        /* justify-content: center; */
+        justify-content: center; 
         align-items: flex-start;
         position: relative;
     }
 
     .logo {
-        width: 15%;
+        width: 330px;
         margin: 0;
         padding: 0;
         position: relative;
@@ -138,10 +137,11 @@ h2 {
 
     nav {
         position: relative;
-        left: 20%;
+        left: 30%;
         bottom: 5rem;
-        width: 50%;
+        width: 100%;
         background: unset;
+        margin-top: 1.5rem;
     }
 
-}
+} 
