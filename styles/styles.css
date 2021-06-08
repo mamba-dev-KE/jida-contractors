@@ -65,21 +65,23 @@ a:visited {
 h1 {
     color: #A38D2F;
     text-transform: uppercase;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     display: block;
-    width: 100%;
+    width: 80%;
     line-height: 1.4;
     text-align: center;
     font-weight: 350;
+    margin: 0 auto;
 }
 
 button {
-    padding: 0.5rem 2rem;
+    padding: 0.8em 3em;
     margin: 1.5rem auto;
     display: block;
     background-color: #2B2EF0;
     color: #fff;
     border-radius: 0.2rem;
+    font-size: 0.9rem;
 }
 
 h2 {
