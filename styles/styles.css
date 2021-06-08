@@ -74,15 +74,16 @@ a:visited {
 h1 {
     color: #A38D2F;
     text-transform: uppercase;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     display: block;
     width: 80%;
-    line-height: 1.5;
+    line-height: 2.5;
     text-align: center;
     font-weight: 350;
     margin: 0 auto;
     border: 1px solid #FFDD4A;
     padding: 0.5em 1em;
+    font-weight: bold;
 }
 
 button {
